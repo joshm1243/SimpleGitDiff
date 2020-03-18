@@ -9,6 +9,9 @@ namespace GitDiff
         //Translates a relative file path into an absolute file path
         private static string GetAbsolutePath(string path)
         {
+
+            path = "../../Files/" + path;
+
             if (Path.IsPathRooted(path))
             {
                 return path;
